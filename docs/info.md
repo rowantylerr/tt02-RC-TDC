@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+A way of estimating resistance for external sensors without a mixed signal ADC. Excites an external RC cicuit with a step, and measures the time taken for the circuit to rise. This rise is assumed to be when input digital pin that is connected to the analogue RC rising voltage flips from 0 to 1. Uses this time to calculate resistance.
 
 ## How to test
 
-Explain how to use your project
+First pulse the reset high, then once the circuit is enabled, will output step voltage, measure time for step input to be seen and then will output 32 bit calculated resistance value via the uart pin.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Only require a resistor and 10 nF capacitor.
